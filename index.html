@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpFoods — Alimentação do Futuro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== CUSTOM CURSOR ========== -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <span class="cursor-text">Ver</span>
+    </div>
+
+    <!-- ========== PRELOADER ========== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-counter">
+                <div class="preloader-number">
+                    <span id="preloader-count">0</span>
+                </div>
+            </div>
+            <div class="preloader-brand">
+                <div class="preloader-brand-text">
+                    <span>U</span><span>p</span><span>F</span><span>o</span><span>o</span><span>d</span><span>s</span>
+                </div>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+            </div>
+        </div>
+        <div class="preloader-overlay preloader-overlay-1"></div>
+        <div class="preloader-overlay preloader-overlay-2"></div>
+    </div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-text">UpFoods</span>
+                <span class="nav-logo-dot"></span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-text="Sobre">Sobre</a>
+                <a href="#expertise" class="nav-link" data-text="Expertise">Expertise</a>
+                <a href="#showcase" class="nav-link" data-text="Cases">Cases</a>
+                <a href="#philosophy" class="nav-link" data-text="Filosofia">Filosofia</a>
+                <a href="#contact" class="nav-link" data-text="Contato">Contato</a>
+            </div>
+            <button class="nav-cta magnetic-btn" data-strength="25">
+                <span>Fale Conosco</span>
+            </button>
+            <button class="nav-hamburger" id="nav-hamburger">
+                <div class="hamburger-line hamburger-line-1"></div>
+                <div class="hamburger-line hamburger-line-2"></div>
+                <div class="hamburger-line hamburger-line-3"></div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-bg"></div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-links">
+                <a href="#about" class="mobile-menu-link"><span>Sobre</span></a>
+                <a href="#expertise" class="mobile-menu-link"><span>Expertise</span></a>
+                <a href="#showcase" class="mobile-menu-link"><span>Cases</span></a>
+                <a href="#philosophy" class="mobile-menu-link"><span>Filosofia</span></a>
+                <a href="#contact" class="mobile-menu-link"><span>Contato</span></a>
+            </div>
+            <div class="mobile-menu-footer">
+                <div class="mobile-menu-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grain"></div>
+            <div class="hero-gradient hero-gradient-1"></div>
+            <div class="hero-gradient hero-gradient-2"></div>
+            <div class="hero-gradient hero-gradient-3"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <div class="hero-eyebrow-line"></div>
+                    <span class="hero-eyebrow-text">Alimentação Sustentável & Inovadora</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hero-title-line">
+                        <span class="hero-title-word">Nutrição</span>
+                    </span>
+                    <span class="hero-title-line">
+                        <span class="hero-title-word">que <em>transforma</em></span>
+                    </span>
+                    <span class="hero-title-line">
+                        <span class="hero-title-word">o amanhã</span>
+                    </span>
+                </h1>
+
+                <div class="hero-bottom">
+                    <p class="hero-description">
+                        Conectamos ciência, sustentabilidade e sabor para criar 
+                        experiências alimentares que nutrem pessoas e regeneram o planeta.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#about" class="btn-circle magnetic-btn" data-strength="40">
+                            <span class="btn-circle-text">Explorar</span>
+                            <svg class="btn-circle-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line">
+                <div class="scroll-line-fill"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+
+        <div class="hero-badge">
+            <div class="hero-badge-rotating">
+                <svg viewBox="0 0 200 200" width="140" height="140">
+                    <defs>
+                        <path id="circlePath" d="M 100, 100 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePath" class="badge-text">
+                            UPFOODS • ALIMENTAÇÃO DO FUTURO • SUSTENTÁVEL •
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <div class="hero-badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <section class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-item">Sustentabilidade</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Inovação</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Nutrição</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Tecnologia</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Bem-estar</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Orgânico</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Sustentabilidade</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Inovação</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Nutrição</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Tecnologia</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Bem-estar</span>
+                <span class="marquee-separator">✦</span>
+                <span class="marquee-item">Orgânico</span>
+                <span class="marquee-separator">✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-label">
+                <span class="section-label-number">01</span>
+                <span class="section-label-line"></span>
+                <span class="section-label-text">Sobre nós</span>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-left">
+                    <h2 class="about-title reveal-text">
+                        Somos uma empresa dedicada a <em>revolucionar</em> a forma como 
+                        o mundo se alimenta
+                    </h2>
+                </div>
+                <div class="about-right">
+                    <p class="about-text reveal-fade">
+                        Desde 2011, a UpFoods trabalha na interseção de ciência alimentar, 
+                        sustentabilidade e design de experiências. Acreditamos que cada refeição 
+                        é uma oportunidade de nutrir não apenas o corpo, mas também o planeta.
+                    </p>
+                    <p class="about-text reveal-fade">
+                        Nossa abordagem combina pesquisa científica de ponta com práticas 
+                        ancestrais de cultivo, criando soluções alimentares que são ao mesmo 
+                        tempo inovadoras e respeitosas com a natureza.
+                    </p>
+                    <a href="#" class="link-underline reveal-fade">
+                        <span>Conheça nossa história</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card reveal-up">
+                    <div class="stat-value" data-count="500">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Projetos<br>realizados</div>
+                </div>
+                <div class="stat-card reveal-up">
+                    <div class="stat-value" data-count="98">0</div>
+                    <div class="stat-plus">%</div>
+                    <div class="stat-label">Taxa de<br>satisfação</div>
+                </div>
+                <div class="stat-card reveal-up">
+                    <div class="stat-value" data-count="15">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Anos de<br>experiência</div>
+                </div>
+                <div class="stat-card reveal-up">
+                    <div class="stat-value" data-count="30">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Países<br>atendidos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERTISE SECTION ========== -->
+    <section class="expertise section-padding" id="expertise">
+        <div class="container">
+            <div class="section-label">
+                <span class="section-label-number">02</span>
+                <span class="section-label-line"></span>
+                <span class="section-label-text">Expertise</span>
+            </div>
+
+            <h2 class="expertise-title reveal-text">
+                O que fazemos de <em>melhor</em>
+            </h2>
+
+            <div class="expertise-list">
+                <div class="expertise-item" data-color="#6366f1">
+                    <div class="expertise-item-inner">
+                        <div class="expertise-item-header">
+                            <span class="expertise-number">01</span>
+                            <h3 class="expertise-name">Consultoria Nutricional</h3>
+                        </div>
+                        <p class="expertise-desc">
+                            Orientação estratégica personalizada para empresas e indivíduos 
+                            que buscam excelência nutricional e sustentabilidade alimentar.
+                        </p>
+                        <div class="expertise-tags">
+                            <span class="tag">Estratégia</span>
+                            <span class="tag">Nutrição</span>
+                            <span class="tag">Bem-estar</span>
+                        </div>
+                        <div class="expertise-arrow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="expertise-image-preview">
+                        <div class="expertise-image-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                    </div>
+                </div>
+
+                <div class="expertise-item" data-color="#ec4899">
+                    <div class="expertise-item-inner">
+                        <div class="expertise-item-header">
+                            <span class="expertise-number">02</span>
+                            <h3 class="expertise-name">Produtos Sustentáveis</h3>
+                        </div>
+                        <p class="expertise-desc">
+                            Desenvolvimento de alimentos orgânicos e ecologicamente 
+                            responsáveis com cadeia produtiva transparente e rastreável.
+                        </p>
+                        <div class="expertise-tags">
+                            <span class="tag">Orgânico</span>
+                            <span class="tag">Zero Waste</span>
+                            <span class="tag">R&D</span>
+                        </div>
+                        <div class="expertise-arrow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="expertise-image-preview">
+                        <div class="expertise-image-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                    </div>
+                </div>
+
+                <div class="expertise-item" data-color="#14b8a6">
+                    <div class="expertise-item-inner">
+                        <div class="expertise-item-header">
+                            <span class="expertise-number">03</span>
+                            <h3 class="expertise-name">Inovação Alimentar</h3>
+                        </div>
+                        <p class="expertise-desc">
+                            Pesquisa e desenvolvimento de tecnologias disruptivas 
+                            no setor alimentício, do cultivo vertical à proteína alternativa.
+                        </p>
+                        <div class="expertise-tags">
+                            <span class="tag">FoodTech</span>
+                            <span class="tag">Pesquisa</span>
+                            <span class="tag">Inovação</span>
+                        </div>
+                        <div class="expertise-arrow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="expertise-image-preview">
+                        <div class="expertise-image-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                    </div>
+                </div>
+
+                <div class="expertise-item" data-color="#f59e0b">
+                    <div class="expertise-item-inner">
+                        <div class="expertise-item-header">
+                            <span class="expertise-number">04</span>
+                            <h3 class="expertise-name">Educação & Cultura</h3>
+                        </div>
+                        <p class="expertise-desc">
+                            Programas educacionais e experiências imersivas que transformam 
+                            a relação das pessoas com a alimentação e o meio ambiente.
+                        </p>
+                        <div class="expertise-tags">
+                            <span class="tag">Educação</span>
+                            <span class="tag">Workshops</span>
+                            <span class="tag">Cultura</span>
+                        </div>
+                        <div class="expertise-arrow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="expertise-image-preview">
+                        <div class="expertise-image-placeholder" style="background: linear-gradient(135deg, #fbbf24, #f97316);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SHOWCASE / HORIZONTAL SCROLL ========== -->
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <div class="section-label">
+                <span class="section-label-number">03</span>
+                <span class="section-label-line"></span>
+                <span class="section-label-text">Cases selecionados</span>
+            </div>
+            <h2 class="showcase-title reveal-text">
+                Projetos que <em>inspiram</em>
+            </h2>
+        </div>
+
+        <div class="showcase-horizontal" id="showcase-horizontal">
+            <div class="showcase-track">
+                <div class="showcase-card" data-cursor-text="Ver Case">
+                    <div class="showcase-card-image">
+                        <div class="showcase-card-placeholder" style="background: linear-gradient(135deg, #1a1a2e, #16213e);"></div>
+                        <div class="showcase-card-overlay"></div>
+                    </div>
+                    <div class="showcase-card-content">
+                        <span class="showcase-card-category">Branding & Produto</span>
+                        <h3 class="showcase-card-title">Green Market</h3>
+                        <p class="showcase-card-desc">Redesign completo da marca e linha de produtos orgânicos</p>
+                    </div>
+                    <span class="showcase-card-year">2025</span>
+                </div>
+
+                <div class="showcase-card" data-cursor-text="Ver Case">
+                    <div class="showcase-card-image">
+                        <div class="showcase-card-placeholder" style="background: linear-gradient(135deg, #0f3443, #34e89e);"></div>
+                        <div class="showcase-card-overlay"></div>
+                    </div>
+                    <div class="showcase-card-content">
+                        <span class="showcase-card-category">FoodTech</span>
+                        <h3 class="showcase-card-title">EcoSnacks Lab</h3>
+                        <p class="showcase-card-desc">Desenvolvimento de snacks com proteína vegetal</p>
+                    </div>
+                    <span class="showcase-card-year">2025</span>
+                </div>
+
+                <div class="showcase-card" data-cursor-text="Ver Case">
+                    <div class="showcase-card-image">
+                        <div class="showcase-card-placeholder" style="background: linear-gradient(135deg, #2d1b69, #6366f1);"></div>
+                        <div class="showcase-card-overlay"></div>
+                    </div>
+                    <div class="showcase-card-content">
+                        <span class="showcase-card-category">Consultoria</span>
+                        <h3 class="showcase-card-title">Fresh & Co.</h3>
+                        <p class="showcase-card-desc">Planejamento estratégico de sustentabilidade</p>
+                    </div>
+                    <span class="showcase-card-year">2024</span>
+                </div>
+
+                <div class="showcase-card" data-cursor-text="Ver Case">
+                    <div class="showcase-card-image">
+                        <div class="showcase-card-placeholder" style="background: linear-gradient(135deg, #434343, #000000);"></div>
+                        <div class="showcase-card-overlay"></div>
+                    </div>
+                    <div class="showcase-card-content">
+                        <span class="showcase-card-category">Inovação & R&D</span>
+                        <h3 class="showcase-card-title">NutriTech</h3>
+                        <p class="showcase-card-desc">Plataforma de nutrição personalizada com IA</p>
+                    </div>
+                    <span class="showcase-card-year">2024</span>
+                </div>
+
+                <div class="showcase-card" data-cursor-text="Ver Case">
+                    <div class="showcase-card-image">
+                        <div class="showcase-card-placeholder" style="background: linear-gradient(135deg, #c94b4b, #4b134f);"></div>
+                        <div class="showcase-card-overlay"></div>
+                    </div>
+                    <div class="showcase-card-content">
+                        <span class="showcase-card-category">Educação</span>
+                        <h3 class="showcase-card-title">Raízes Vivas</h3>
+                        <p class="showcase-card-desc">Programa educacional de alimentação consciente</p>
+                    </div>
+                    <span class="showcase-card-year">2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PHILOSOPHY / TEXT REVEAL SECTION ========== -->
+    <section class="philosophy section-padding" id="philosophy">
+        <div class="container">
+            <div class="section-label light">
+                <span class="section-label-number">04</span>
+                <span class="section-label-line"></span>
+                <span class="section-label-text">Nossa filosofia</span>
+            </div>
+
+            <div class="philosophy-content">
+                <p class="philosophy-text" id="philosophy-text">
+                    Acreditamos que a verdadeira inovação nasce do respeito pela natureza. 
+                    Cada ingrediente conta uma história, cada processo reflete nosso compromisso 
+                    com um futuro onde alimentação saudável seja acessível, sustentável e 
+                    extraordinariamente deliciosa. Não estamos apenas criando produtos — 
+                    estamos cultivando um novo paradigma alimentar.
+                </p>
+            </div>
+
+            <div class="philosophy-values">
+                <div class="value-card reveal-up">
+                    <div class="value-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="value-title">Regeneração</h4>
+                    <p class="value-desc">Práticas que devolvem mais ao planeta do que consomem</p>
+                </div>
+                <div class="value-card reveal-up">
+                    <div class="value-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4 class="value-title">Transparência</h4>
+                    <p class="value-desc">Rastreabilidade total do campo ao consumidor</p>
+                </div>
+                <div class="value-card reveal-up">
+                    <div class="value-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="value-title">Inovação</h4>
+                    <p class="value-desc">Tecnologia a serviço da natureza e do sabor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIAL SECTION ========== -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="testimonial-wrapper">
+                <div class="testimonial-quote reveal-fade">
+                    <svg class="testimonial-quote-icon" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <path d="M25 30H15C15 22 20 17 25 15V20C22 22 20 25 20 30H25V45H10V30H25ZM50 30H40C40 22 45 17 50 15V20C47 22 45 25 45 30H50V45H35V30H50Z" fill="currentColor" opacity="0.15"/>
+                    </svg>
+                    <blockquote class="testimonial-text">
+                        "A UpFoods transformou completamente nossa abordagem ao setor alimentício. 
+                        Sua visão sobre sustentabilidade e inovação é verdadeiramente inspiradora 
+                        e os resultados falam por si."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-avatar">
+                            <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg, #667eea, #764ba2);"></div>
+                        </div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">Marina Ferreira</span>
+                            <span class="testimonial-author-role">CEO, Orgânica Foods</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <div class="section-label light">
+                    <span class="section-label-number">05</span>
+                    <span class="section-label-line"></span>
+                    <span class="section-label-text">Contato</span>
+                </div>
+
+                <h2 class="cta-title reveal-text">
+                    Vamos criar algo<br><em>extraordinário</em> juntos?
+                </h2>
+
+                <div class="cta-bottom">
+                    <p class="cta-desc reveal-fade">
+                        Estamos sempre abertos a novos projetos, parcerias e ideias 
+                        que possam impactar positivamente o futuro da alimentação.
+                    </p>
+                    <a href="mailto:contato@upfoods.com" class="btn-large magnetic-btn reveal-up" data-strength="30">
+                        <span class="btn-large-text">contato@upfoods.com</span>
+                        <span class="btn-large-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">UpFoods</h2>
+                    <p class="footer-tagline">Alimentação do futuro, hoje.</p>
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Navegação</h5>
+                        <a href="#about" class="footer-link">Sobre</a>
+                        <a href="#expertise" class="footer-link">Expertise</a>
+                        <a href="#showcase" class="footer-link">Cases</a>
+                        <a href="#contact" class="footer-link">Contato</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Social</h5>
+                        <a href="#" class="footer-link">Instagram</a>
+                        <a href="#" class="footer-link">LinkedIn</a>
+                        <a href="#" class="footer-link">YouTube</a>
+                        <a href="#" class="footer-link">Twitter/X</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Contato</h5>
+                        <a href="mailto:contato@upfoods.com" class="footer-link">contato@upfoods.com</a>
+                        <a href="tel:+5511999999999" class="footer-link">+55 11 99999-9999</a>
+                        <span class="footer-link">São Paulo, SP — Brasil</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 UpFoods. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
